@@ -1,0 +1,7 @@
+package sankakucomplex.utils
+
+class PreviewUrlTransformer{
+	final static String transformPreview(String url){
+			
+	} 
+}

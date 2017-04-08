@@ -1,0 +1,17 @@
+apply plugin: 'groovy'
+apply plugin: 'eclipse'
+apply plugin: 'application'
+
+repositories{
+	mavenCentral()
+}
+
+dependencies{
+	compile('org.codehaus.groovy:groovy-all:2.4.10')
+}
+
+jar{
+	manifest.attributes ('Main-Class': 'sankakucomplex.Main')
+}
+
+mainClassName="sankakucomplex.Main"
