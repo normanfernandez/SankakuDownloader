@@ -1,4 +1,4 @@
-apply plugin: 'groovy'
+apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'application'
 
@@ -7,11 +7,11 @@ repositories{
 }
 
 dependencies{
-	compile('org.codehaus.groovy:groovy-all:2.4.10')
+    testCompile 'junit:junit:4.12'
 }
 
 jar{
-	manifest.attributes ('Main-Class': 'sankakucomplex.Main')
+    manifest.attributes ('Main-Class': 'sankakucomplex.Main')
 }
 
 mainClassName="sankakucomplex.Main"
